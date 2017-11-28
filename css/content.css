@@ -11,7 +11,7 @@
 .marketing-site-content-section .button.round {
   border-radius: 5000px;
   text-transform: uppercase;
-  margin-bottom: 0;
+  margin-bottom: 0 ;
 }
 
 .marketing-site-content-section .marketing-site-content-section-img {
@@ -76,5 +76,12 @@
   font-size: 13px;
 }
 .center {
-    margin: left;
+    margin: left auto;
   }
+  .right {
+    position: absolute;
+    top:1200px;
+    right:75px;
+    width:900px;
+    padding: 20px;
+}
