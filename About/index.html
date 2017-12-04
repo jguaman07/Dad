@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en" dir="ltr">
+<html ng-app="myApp" class="no-js" lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/foundation.css">
     <link rel="stylesheet" href="../css/app.css">
     <link rel="stylesheet" href="../css/Nav.css">
-    <link rel="stylesheet" href="css/Header.css">
+    <link rel="stylesheet" href="../css/Header.css">
     <link rel="stylesheet" href="../css/Content.css">
     <link rel="stylesheet" href="../css/Footer.css">
   </head>
@@ -17,58 +17,48 @@
     <nav class="hover-underline-menu" data-menu-underline-from-center>
   <ul class="menu align-center">
     <li><a href="../index.html">Home</a></li>
-    <li><a href="#">Products</a></li>
-    <li><a href="../About/index.html">About</a></li>
-    <li><a href="../Contact/index.html">Contact</a></li>
+    <li><a href="../Products/index.html">Products</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="../contact/index.html">Contact</a></li>
   </ul>
 </nav>
   <!-- End Nav -->
 
     <!-- Begin Header -->
-    <section class="filter-simple">
-  <div class="button-group round">
-    <button class="button hollow filter-simple-button is-active" data-filter="all">All</button>
-    <button class="button hollow filter-simple-button" data-filter="space">CaesarStone</button>
-    <button class="button hollow filter-simple-button" data-filter="animals">CompacStone</button>
-    <button class="button hollow filter-simple-button" data-filter="nature">SileStone</button>
+    <div class="row expanded collapse">
+      <div class="grid-x grid-padding-x">
+    <div class="column">
+      <div class="large-article-header">
+        <div class="large-article-header-content">
+          <div class="center-container">
+            <div class="article-date">
+              <p></p>
+            </div>
+            <div class="article-title">
+              <h1><center>City Marble Corp</center></h1>
+            </div>
+            <div class="article-details">
+              <div class="article-author">
+                <img src="Contactus.jpg" alt="" />
+                <a href="#"></a>
+              </div>
+              <div class="article-comments">
+                <a href="#"><i class="fa fa-comment" aria-hidden="true"></i> </a>
+                <h3>Hello my name is Jose Guaman. I am the founder of this company and I'm proud to say this company has been runnig for more than 20 years. For years I've slowly expanded  my company and will continue to do so. We specilize in fabricating in Bathroom Vanities, Kitchen Countertops, Backsplash, Tub and Bathroom Surrounds, Fire Places, Wall Tile & Flooring and so much more. If you have any questions or would like to have an an estimate or have an appointment please feel free to call me, email or stop by our buissnes.
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div class="row small-up-2 medium-up-3 large-up-4">
-    <div class="grid-x grid-padding-x">
-    <div class="column column-block filter-simple-item space">
-      <img src="4033_rugged_concrete_midrange_dps - Copy.jpg"width="550" height="30" alt="" />
-    </div>
-    <div class="column column-block filter-simple-item nature">
-      <img src="white-diamond.jpg"width="550" height="30" alt="" />
-    </div>
-    <div class="column column-block filter-simple-item animals">
-      <img src="anthracite_render.jpg" width="550" height="50" alt="" />
-    </div>
-    <div class="column column-block filter-simple-item nature">
-      <img src="iconic-black.jpg"width="550" height="30" alt="" />
-    </div>
-    <div class="column column-block filter-simple-item nature">
-      <img src="aquatint.jpg"width="550" height="30" alt="" />
-    </div>
-    <div class="column column-block filter-simple-item animals">
-      <img src="new-beige_dune_render.jpg"width="550" height="30" alt="" />
-    </div>
-    <div class="column column-block filter-simple-item animals">
-      <img src="marfilstone.jpg"width="550" height="30" alt="" />
-    </div>
-    <div class="column column-block filter-simple-item space">
-      <img src="5043_montblanc_cu_landscape.jpg"width="550" height="30" alt="" />
-    </div>
-    <div class="column column-block filter-simple-item space">
-      <img src="6313_turbine-grey_cu_landscape.jpg"width="550" height="30" alt="" />
-    </div>
-  </div>
-</section>
+
 
     <!-- End Header -->
 
     <!-- Begin Content -->
-
 
     <!-- End Content -->
 
@@ -99,7 +89,8 @@
         </div>
       </div>
     </footer>
-  </div>
+    </div>
+
     <!-- End Footer -->
     <script src="../js/vendor/jquery.js"></script>
     <script src="../js/vendor/what-input.js"></script>

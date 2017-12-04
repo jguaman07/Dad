@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en" dir="ltr">
+<html ng-app="myApp" class="no-js" lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/app.css">
     <link rel="stylesheet" href="../css/Nav.css">
     <link rel="stylesheet" href="../css/Header.css">
-    <link rel="stylesheet" href="css/Content.css">
+    <link rel="stylesheet" href="../css/Content.css">
     <link rel="stylesheet" href="../css/Footer.css">
   </head>
   <body>
@@ -18,53 +18,42 @@
   <ul class="menu align-center">
     <li><a href="../index.html">Home</a></li>
     <li><a href="../Products/index.html">Products</a></li>
+    <li><a href="../About/index.html">About</a></li>
     <li><a href="#">Contact</a></li>
   </ul>
 </nav>
   <!-- End Nav -->
 
     <!-- Begin Header -->
-  <Center>
-    <p>We speilze in fabricating vanitys tops , kicthen counter tops, island top, backsplash,
-      and many more we are a proud compnay working for over 20 years and we continusee
-       to do so.</p>
+<H1> Contact Us for an appointment </h1>
     <!-- End Header -->
 
     <!-- Begin Content -->
-    <div class="about-the-author">
-      <h3 class="author-title">About the Author</h3>
+    <div id="after_submit"></div>
+    <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
       <div class="row">
-        <div class="small-12 medium-4 columns">
-          <div class="author-image">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/President_Barack_Obama.jpg/480px-President_Barack_Obama.jpg">
-          </div>
-          <div class="author-social">
-            <a href="#">
-              <span class="fa-stack fa-lg facebook">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-            <a href="#">
-              <span class="fa-stack fa-lg twitter">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-            <a href="#">
-              <span class="fa-stack fa-lg linkedin">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </div>
-        </div>
-        <div class="small-12 medium-8 columns">
-          <h4 class="separator-left">Barack Obama</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores eum, iusto vel repudiandae, quaerat soluta sequi officia. Blanditiis atque, illo eaque sint in architecto illum nostrum repudiandae labore tenetur! Eaque impedit pariatur odio ad ipsum qui aspernatur dolorem consequuntur a molestias nisi, quae voluptatem expedita, inventore voluptatibus dolores, veritatis corporis facilis laudantium explicabo vero! Non hic quia facilis blanditiis eum.</p>
-        </div>
+        <label class="required" for="name">Your Name:</label><br />
+        <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+        <span id="name_validation" class="error_message"></span>
       </div>
-    </div>
+      <div class="row">
+        <label class="required" for="email">Your Email:</label><br />
+        <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+        <span id="email_validation" class="error_message"></span>
+      </div>
+      <div class="row">
+        <label class="required" for="message">Your Message:</label><br />
+        <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+        <span id="message_validation" class="error_message"></span>
+      </div>
+        <div class="contact-us-form-actions">
+          <input type="submit" class="button" value="Send it" />
+          <div>
+            <label for="FileUpload" class="button contact-us-file-button">Attach Files</label>
+            <input type="file" id="FileUpload" class="show-for-sr">
+          </div>
+        </div>
+    </form>
 
 
     <!-- End Content -->
@@ -85,21 +74,6 @@
       <div class="footer-center" data-equalizer-watch>
         <div class="baseline">
           <div class="newsletter">
-            <h4>Contact us</h4>
-            <div id="after_submit"></div>
-<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-  <div class="row">
-    <label class="required" for="name">Your Email:</label><br />
-    <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
-    <span id="name_validation" class="error_message"></span>
-  </div>
-  <div class="row">
-    <label class="required" for="email">Your Message:</label><br />
-    <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
-    <span id="email_validation" class="error_message"></span>
-  </div>
-    <input id="submit_button" type="submit" value="Send email" />
-</form>
           </div>
         </div>
       </div>
@@ -111,7 +85,8 @@
         </div>
       </div>
     </footer>
-  </div>
+    </div>
+
     <!-- End Footer -->
     <script src="../js/vendor/jquery.js"></script>
     <script src="../js/vendor/what-input.js"></script>
